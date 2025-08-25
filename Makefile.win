@@ -1,30 +1,33 @@
-# Project: Aula02exercicio01
+# Project: Aula03exerciciolab02
 # Makefile created by Dev-C++ 5.0.0.4
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
 RES      = 
-OBJ      = Aula02exercicio01.o $(RES)
-LINKOBJ  = Aula02exercicio01.o $(RES)
+OBJ      = Aula03exerciciolab02.o numeros.o $(RES)
+LINKOBJ  = Aula03exerciciolab02.o numeros.o $(RES)
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/lib" -L"C:/Program Files (x86)/Dev-Cpp/lib/gcc" -static-libstdc++ -static-libgcc  
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/include" 
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/include" 
-BIN      = Aula02exercicio01.exe
+BIN      = Aula03exerciciolab02.exe
 CXXFLAGS = $(CXXINCS)  
 CFLAGS   = $(INCS)  
 RM       = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
 
-all: all-before Aula02exercicio01.exe all-after
+all: all-before Aula03exerciciolab02.exe all-after
 
 
 clean: clean-custom
 	${RM} $(OBJ) $(BIN)
 
 $(BIN): $(OBJ)
-	$(CC) $(LINKOBJ) -o "Aula02exercicio01.exe" $(LIBS)
+	$(CC) $(LINKOBJ) -o "Aula03exerciciolab02.exe" $(LIBS)
 
-Aula02exercicio01.o: Aula02exercicio01.c
-	$(CC) -c Aula02exercicio01.c -o Aula02exercicio01.o $(CFLAGS)
+Aula03exerciciolab02.o: Aula03exerciciolab02.c
+	$(CC) -c Aula03exerciciolab02.c -o Aula03exerciciolab02.o $(CFLAGS)
+
+numeros.o: numeros.c
+	$(CC) -c numeros.c -o numeros.o $(CFLAGS)
