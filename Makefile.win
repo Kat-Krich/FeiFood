@@ -1,0 +1,30 @@
+# Project: Aula02exercicio01
+# Makefile created by Dev-C++ 5.0.0.4
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = 
+OBJ      = Aula02exercicio01.o $(RES)
+LINKOBJ  = Aula02exercicio01.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/lib" -L"C:/Program Files (x86)/Dev-Cpp/lib/gcc" -static-libstdc++ -static-libgcc  
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/include" 
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/include" 
+BIN      = Aula02exercicio01.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS   = $(INCS)  
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Aula02exercicio01.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "Aula02exercicio01.exe" $(LIBS)
+
+Aula02exercicio01.o: Aula02exercicio01.c
+	$(CC) -c Aula02exercicio01.c -o Aula02exercicio01.o $(CFLAGS)
