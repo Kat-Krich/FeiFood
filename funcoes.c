@@ -6,7 +6,7 @@
 #define VERMELHO "\033[1;31m"
 
 void Cadastro(struct cadastro *pessoa1){
-	char nome[20];
+	char nome;
 	printf(VERMELHO"Nome: "RESET);
 	scanf("%s", nome);
 	strcpy(pessoa1->nome, nome);
