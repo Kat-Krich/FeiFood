@@ -107,15 +107,11 @@ int main() {
 					if(opcao1 == 1){
 						sleep(2);
     					system("cls");
+    					int opcao2;
 						printf(VERMELHO"\n Qual restaurante tu desejas?\n 1- "RESET"McDonald's\n"VERMELHO" 2- "RESET"Subway\n"VERMELHO" 3- "RESET"Burger King\n"VERMELHO" 4- "RESET"Taco Bell\n"VERMELHO" 5- "RESET"Chine in Box\n"VERMELHO" 6- "RESET"Sukiya\n");
 						printf(VERMELHO" Opção: "RESET);
-						int opcao2;
 						scanf("%d",&opcao2);
-						switch(opcao2){
-							case 1:
-								Buscar(&comida,opcao2,user_ativo);
-								break;
-						}
+						printf(VERMELHO"%d",opcao2);
 					}else if(opcao1 == 2){
 						printf("teste");
 					}else if(opcao1 == 3){

@@ -188,7 +188,7 @@ void Buscar(struct alimento *comida,int opcao, char user[20]){
     }
     char busca[40];
     printf(VERMELHO"\n Qual lanche tu procuras: "RESET);
-    getchar();
+    //getchar();
     fgets(busca, 40, stdin);
     strtok(busca, "\n");
 	rewind(arquivo);
