@@ -9,15 +9,8 @@
 //Definições ASCI
 #define RESET    "\033[0m"
 #define VERMELHO "\033[1;31m"
-
-//Estruturas
-struct cadastro{
-	char nome[20],user[20],senha[20],endereco[100],email[100];
-	int ano_nascimento;
-};
-struct login{
-	char user[20],senha[20];
-};
+#define AMARELO "\x1b[1;33m"
+#define VERDE "\x1b[1;32m"
 
 //Escopo do código
 int main() {
@@ -28,45 +21,45 @@ int main() {
 	
 	system("color 0C");
 	printf("\n");
-	printf("\t                                                            ###\n");
-	printf("\t                                                          *#####\n");
-	printf("\t                                                           #####\n");
-	printf("\t                                                    ##################\n");
-	printf("\t                                                 #######################*\n");
-	printf("\t                                               #######################*###*\n");
-	printf("\t                                             ###########################*####\n");
-	printf("\t                                            #############################* ####\n");
-	printf("\t                                          ################################# ####\n");
-	printf("\t                                          ################################## ####\n");
-	printf("\t                                         ###################################  ###\n");
-	printf("\t                                        ##################################### ####\n");
-	printf("\t                                        *########################################*\n");
-	printf("\t                                        #*****************************####********#\n");
-    printf("\t   *#******#  ***#***#**  ***   *********      ##*##          #****      ******#\n");
-    printf("\t  ########## ########### ##### ########### *##########     ##########   ##########*\n");
-    printf("\t  #########  *###*####*  ####  #########* *##### ######  *##### ######  ####**######\n");
-    printf("\t #####       ####        ####  ####      *####     #### *####     ##### ####    *####\n");
-    printf("\t #########* *########*  #####  ########* ####      #### ####      ####*####*    *####\n");
-    printf("\t #########  ##########  ####  *##############      #### ####      #### ####     *###\n");
-    printf("\t#####       ####        ####  ####      #####     ##### ####     ##### ####    #####\n");
-    printf("\t####*      ########### *###* *####       ######*######  #####*#######  #####*######\n");
-    printf("\t###*       ########### ####* #####        ##########     ##########   *##########\n");
-    printf("\t ###        #########   ###   ###           #####          ##*##       ######\n");
-    printf("\t                                                    *******                   ***\n");
-    printf("\t     ***                                         *********                   ****\n");
-    printf("\t      ***                                   ***********   **                ****\n");
-    printf("\t       ****                               ********   *******              *****\n");
-    printf("\t         ****                            *****************               ****\n");
-    printf("\t          ******                        **************   *****         *****\n");
-    printf("\t            *******                   *************   *******        ******\n");
-    printf("\t              *********           ************************         ******\n");
-	printf("\t                 **************************************         *******\n"); 
-	printf("\t                      ***************      ********         *********\n");
-	printf("\t                                                        **********\n");
-	printf("\t                              *****+             **************\n");
-	printf("\t                                 **************************\n");   
-	printf("\t                                      ***************\n");
-    sleep(4);
+	printf("\t\t                                                            ###\n");
+	printf("\t\t                                                          *#####\n");
+	printf("\t\t                                                           #####\n");
+	printf("\t\t                                                    ##################\n");
+	printf("\t\t                                                 #######################*\n");
+	printf("\t\t                                               #######################*###*\n");
+	printf("\t\t                                             ###########################*####\n");
+	printf("\t\t                                            #############################* ####\n");
+	printf("\t\t                                          ################################# ####\n");
+	printf("\t\t                                          ################################## ####\n");
+	printf("\t\t                                         ###################################  ###\n");
+	printf("\t\t                                        ##################################### ####\n");
+	printf("\t\t                                        *########################################*\n");
+	printf("\t\t                                        #*****************************####********#\n");
+    printf("\t\t   *#******#  ***#***#**  ***   *********      ##*##          #****      ******#\n");
+    printf("\t\t  ########## ########### ##### ########### *##########     ##########   ##########*\n");
+    printf("\t\t  #########  *###*####*  ####  #########* *##### ######  *##### ######  ####**######\n");
+    printf("\t\t #####       ####        ####  ####      *####     #### *####     ##### ####    *####\n");
+    printf("\t\t #########* *########*  #####  ########* ####      #### ####      ####*####*    *####\n");
+    printf("\t\t #########  ##########  ####  *##############      #### ####      #### ####     *###\n");
+    printf("\t\t#####       ####        ####  ####      #####     ##### ####     ##### ####    #####\n");
+    printf("\t\t####*      ########### *###* *####       ######*######  #####*#######  #####*######\n");
+    printf("\t\t###*       ########### ####* #####        ##########     ##########   *##########\n");
+    printf("\t\t ###        #########   ###   ###           #####          ##*##       ######\n");
+    printf("\t\t                                                    *******                   ***\n");
+    printf("\t\t     ***                                         *********                   ****\n");
+    printf("\t\t      ***                                   ***********   **                ****\n");
+    printf("\t\t       ****                               ********   *******              *****\n");
+    printf("\t\t         ****                            *****************               ****\n");
+    printf("\t\t          ******                        **************   *****         *****\n");
+    printf("\t\t            *******                   *************   *******        ******\n");
+    printf("\t\t              *********           ************************         ******\n");
+	printf("\t\t                 **************************************         *******\n"); 
+	printf("\t\t                      ***************      ********         *********\n");
+	printf("\t\t                                                        **********\n");
+	printf("\t\t                              *****+             **************\n");
+	printf("\t\t                                 **************************\n");   
+	printf("\t\t                                      ***************\n");
+    sleep(5);
     system("cls");
     system("color 0F");
     
@@ -93,32 +86,51 @@ int main() {
 			system("cls");
 		} 
 		else if(opcao == 2){
-			printf(VERMELHO"\n\tLogin\n"RESET);
-			Login(&pessoa2);
-			strcpy(user_ativo, pessoa2.user);
-			sleep(2);
-			system("cls");
-			
+			printf(VERMELHO"\n\tLogin\n"RESET);	
 			//Menu Secundário
-			while(true){
-				//Variáveis locais
-				int opcao;
-				printf(VERMELHO"\nUsuario Logado: %s\n"RESET,user_ativo);
-				printf(VERMELHO"O que desejas fazer?\n1- Buscar por Alimentos\n2- Fazer Pedidos\n3- Pedidos Realizados\n4- Sair da Conta\nOpção: ");
-				scanf("%d", &opcao);
-				if(opcao == 1){
-					printf("teste");
-				}else if(opcao == 2){
-					printf("teste");
-				}else if(opcao == 3){
-					printf("teste");
-				}else{
-					break;
+			if(Login(&pessoa2) == 0){
+				strcpy(user_ativo, pessoa2.user);
+				struct alimento comida;
+    			sleep(2);
+    			system("cls");
+				while(true){
+					int opcao1;
+					printf(VERMELHO"\n Usuario Logado: "RESET);printf("%s",user_ativo);
+					printf(VERMELHO"\n O que desejas fazer?\n");
+					printf(" 1- "RESET);printf("Buscar por Alimentos\n");
+					printf(VERMELHO" 2- "RESET);printf("Fazer Pedidos\n");
+					printf(VERMELHO" 3- "RESET);printf("Pedidos Realizados\n");
+					printf(VERMELHO" 4- "RESET);printf("Sair da Conta\n");
+					printf(VERMELHO" Opção: "RESET);
+					scanf("%d", &opcao1);
+					
+					if(opcao1 == 1){
+						sleep(2);
+    					system("cls");
+						printf(VERMELHO"\n Qual restaurante tu desejas?\n 1- "RESET"McDonald's\n"VERMELHO" 2- "RESET"Subway\n"VERMELHO" 3- "RESET"Burger King\n"VERMELHO" 4- "RESET"Taco Bell\n"VERMELHO" 5- "RESET"Chine in Box\n"VERMELHO" 6- "RESET"Sukiya\n");
+						printf(VERMELHO" Opção: "RESET);
+						int opcao2;
+						scanf("%d",&opcao2);
+						switch(opcao2){
+							case 1:
+								Buscar(&comida,opcao2,user_ativo);
+								break;
+						}
+					}else if(opcao1 == 2){
+						printf("teste");
+					}else if(opcao1 == 3){
+						printf("teste");
+					}else{
+						break;
+					}	
+					
 				}
+				sleep(2);
+				system("cls");
 			}
 			sleep(2);
-			system("cls");
-		} else
+			system("cls");	
+		}else
 			break;
 	}while(true);
 	
